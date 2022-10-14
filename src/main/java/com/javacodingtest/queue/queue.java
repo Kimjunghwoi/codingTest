@@ -9,12 +9,12 @@ public class queue {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Queue<Integer> queue = new LinkedList<>();
+        StringBuilder stringBuilder = new StringBuilder();
 
         int N = scanner.nextInt();
-
-        int i = 0;
+//        int i = 0;
         int x = 0;
-        while (i < N) {
+        while (N --> 0) {
             String next = scanner.next();
             switch (next) {
                 case "push":
@@ -23,26 +23,27 @@ public class queue {
 //                    System.out.println("push " + x);
                     break;
                 case "pop":
-                    System.out.println(queue.isEmpty() ? -1 : queue.poll());
+                    stringBuilder.append((queue.isEmpty() ? -1 : queue.poll()) + "\n");
+//                    System.out.println(queue.isEmpty() ? -1 : queue.poll());
                     break;
                 case "size":
-                    System.out.println(queue.size());
+                    stringBuilder.append(queue.size() + "\n");
+//                    System.out.println(queue.size());
                     break;
                 case "empty":
-                    System.out.println(queue.isEmpty() ? 1 : 0);
+                    stringBuilder.append((queue.isEmpty() ? 1 : 0) + "\n");
                     break;
                 case "front":
-                    System.out.println(queue.isEmpty() ? -1 : queue.peek());
+                    stringBuilder.append((queue.isEmpty() ? -1 : queue.peek()) + "\n");
                     break;
                 case "back":
-                    System.out.println(queue.isEmpty() ? -1 : x);
+                    stringBuilder.append((queue.isEmpty() ? -1 : x) + "\n");
+                    break;
+                default:
                     break;
             }
-            i++;
+//            i++;
+            System.out.println(stringBuilder);
         }
-
-
     }
-
-
 }
