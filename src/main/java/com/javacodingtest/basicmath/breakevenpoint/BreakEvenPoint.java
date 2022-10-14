@@ -1,4 +1,4 @@
-package com.javacodingtest.basicmath;
+package com.javacodingtest.basicmath.breakevenpoint;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
