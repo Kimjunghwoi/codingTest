@@ -1,14 +1,13 @@
 package com.javacodingtest.queue;
 
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
-public class queue {
+public class Queue {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Queue<Integer> queue = new LinkedList<>();
+        java.util.Queue<Integer> queue = new LinkedList<>();
         StringBuilder stringBuilder = new StringBuilder();
 
         int N = scanner.nextInt();
