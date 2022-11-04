@@ -20,7 +20,6 @@ public class SortNumber3 {
         for (int i = 0; i < N1; i++) {
             arr1[i] = Integer.parseInt(br1.readLine());
         }
-
         // 정렬 메소드
         Arrays.sort(arr1);
 
